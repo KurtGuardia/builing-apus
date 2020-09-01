@@ -1,0 +1,92 @@
+.background {
+  width: 100%;
+  max-width: 100vw;
+  height: 97.5vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBg 10s ease-in-out infinite 0s;
+  background-attachment: fixed;
+  position: relative;
+}
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100vw;
+  height: 97.5vh;
+  background: #5fb95075;
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5f5dc75;
+  border-radius: 25px;
+}
+
+.imagotipo{
+    width: 150px;
+    transform: translate(200%);
+    margin-top: 20px;
+}
+
+h1 {
+  font-size: 50px;
+  margin-left: 20px;
+  color: rgba(47, 47, 47, 0.938);
+}
+
+p {
+  font-size: 30px;
+  margin-left: 20px;
+  color: rgba(47, 47, 47, 0.938);
+}
+
+.fb {
+  color: #1877f2;
+}
+
+.ins {
+  color: #c32aa3;
+}
+
+a p {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+a p img {
+  width: 35px;
+  margin-left: 15px;
+}
+
+@media(max-width: 600px){
+    .imagotipo{
+        transform: translate(50%);
+    }
+    h1,
+    p{
+        margin-right: 20px;
+    }
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url(./bike_landscape2-large.jpg);
+  }
+  33% {
+    background-image: url(./yoga3-large.jpg);
+  }
+  66% {
+    background-image: url(./home2-large.jpg);
+  }
+  100% {
+    background-image: url(./nat-6-small.jpg);
+  }
+}
